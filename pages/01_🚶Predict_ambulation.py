@@ -3,7 +3,6 @@ import pandas as pd
 from pycaret.classification import load_model, predict_model
 
 
-@st.cache(allow_output_mutation=True)
 def load_model_for_cache():
     ret = load_model('finalized_classification_model')
     return ret    
